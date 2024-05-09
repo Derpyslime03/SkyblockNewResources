@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "derpyresources:sapphire"
+    }
+  },
+  "result": {
+    "item": "derpyresources:sapphire_block"
+  }
+}

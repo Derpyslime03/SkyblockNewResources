@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "derpyresources:sapphire_block"
+    }
+  ],
+  "result": {
+    "item": "derpyresources:sapphire",
+    "count": 9
+  }
+}
