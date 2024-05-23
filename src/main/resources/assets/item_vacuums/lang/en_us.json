@@ -1,0 +1,12 @@
+{
+  "item.item_vacuums.sapphire": "Sapphire",
+  "item.item_vacuums.raw_sapphire": "Raw Sapphire",
+  "item.item_vacuums.metal_detector": "Metal Detector",
+
+  "block.item_vacuums.sapphire_block": "Block of Sapphire",
+  "block.item_vacuums.raw_sapphire_block": "Block of Raw Sapphire",
+  "block.item_vacuums.sapphire_ore": "Sapphire Ore",
+  "block.item_vacuums.sound_block": "Sound Block",
+
+  "creativetab.derpy.tab": "Item Vacuums"
+}
