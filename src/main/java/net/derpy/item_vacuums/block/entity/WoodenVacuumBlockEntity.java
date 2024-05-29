@@ -20,6 +20,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
@@ -98,7 +99,7 @@ public class WoodenVacuumBlockEntity extends BlockEntity implements MenuProvider
 
     @Override
     public Component getDisplayName() {
-        return Component.translatable("block.item_vacuums.wooden_vacuum");
+        return Component.translatable("block.item_vacuums.wooden_vacuum_block");
     }
 
     @Nullable
@@ -110,7 +111,7 @@ public class WoodenVacuumBlockEntity extends BlockEntity implements MenuProvider
     @Override
     protected void saveAdditional(CompoundTag pTag) {
         pTag.put("inventory", itemHandler.serializeNBT());
-        pTag.putInt("wooden_vacuum.progress", progress);
+        pTag.putInt("wooden_vacuum_block.progress", progress);
         super.saveAdditional(pTag);
     }
 
@@ -118,7 +119,7 @@ public class WoodenVacuumBlockEntity extends BlockEntity implements MenuProvider
     public void load(CompoundTag pTag) {
         super.load(pTag);
         itemHandler.deserializeNBT(pTag.getCompound("inventory"));
-        progress = pTag.getInt("wooden_vacuum.progress");
+        progress = pTag.getInt("wooden_vacuum_block.progress");
     }
 
     public void tick(Level pLevel, BlockPos pPos, BlockState pState){

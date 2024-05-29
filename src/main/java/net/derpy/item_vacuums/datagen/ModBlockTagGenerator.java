@@ -29,5 +29,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.RAW_SAPPHIRE_BLOCK.get(),
                         ModBlocks.SAPPHIRE_ORE.get()
                 );
+
+        this.tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.WOODEN_VACUUM.get());
     }
 }

@@ -25,7 +25,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         //Actual Mod Blocks
         simpleBlockWithItem(ModBlocks.WOODEN_VACUUM.get(),
-                new ModelFile.UncheckedModelFile(modLoc("item_vacuums:block/wooden_vacuum_block")));
+                new ModelFile.UncheckedModelFile(modLoc("block/wooden_vacuum_block")));
+
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

@@ -14,7 +14,7 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ItemVacuumsMod.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> DERPYRESOURCES_TAB = CREATIVE_MODE_TABS.register("derpy_resources",
+    public static final RegistryObject<CreativeModeTab> ITEM_VACUUMS_TAB = CREATIVE_MODE_TABS.register("item_vacuums",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SAPPHIRE.get()))
                     .title(Component.translatable("creativetab.derpy.tab"))
                     .displayItems((itemDisplayParameters, pOutput) -> {
