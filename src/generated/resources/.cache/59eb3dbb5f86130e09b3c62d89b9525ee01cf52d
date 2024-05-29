@@ -1,0 +1,5 @@
+// 1.20.1	2024-05-22T20:21:41.6016953	Loot Tables
+d11ec99a93c63735a50be39bb14c2f59f1899cb6 data/item_vacuums/loot_tables/blocks/raw_sapphire_block.json
+af48b0f7b47418f53d8fcfc35bc161cdc323d395 data/item_vacuums/loot_tables/blocks/sapphire_block.json
+63746a876241d26ceb42a37016d95e78b4120ab3 data/item_vacuums/loot_tables/blocks/sapphire_ore.json
+d96f8b7a093c69e5d1a999b28652307c601a5c9e data/item_vacuums/loot_tables/blocks/sound_block.json

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "item_vacuums:block/sound_block"
+    }
+  }
+}

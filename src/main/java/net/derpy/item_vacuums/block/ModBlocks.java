@@ -2,6 +2,7 @@ package net.derpy.item_vacuums.block;
 
 import net.derpy.item_vacuums.ItemVacuumsMod;
 import net.derpy.item_vacuums.block.custom.SoundBlock;
+import net.derpy.item_vacuums.block.custom.WoodenVacuumBlock;
 import net.derpy.item_vacuums.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -34,8 +35,8 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3,6)));
 
-    //public static final RegistryObject<Block> WOODEN_VACUUM = registerBlock("wooden_vacuum",
-            //() -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> WOODEN_VACUUM = registerBlock("wooden_vacuum",
+            () -> new WoodenVacuumBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

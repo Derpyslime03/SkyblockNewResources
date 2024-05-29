@@ -2,8 +2,12 @@ package net.derpy.item_vacuums;
 
 import com.mojang.logging.LogUtils;
 import net.derpy.item_vacuums.block.ModBlocks;
+import net.derpy.item_vacuums.block.entity.ModBlockEntities;
 import net.derpy.item_vacuums.item.ModCreativeModeTabs;
 import net.derpy.item_vacuums.item.ModItems;
+import net.derpy.item_vacuums.screen.ModMenuTypes;
+import net.derpy.item_vacuums.screen.WoodenVacuumScreen;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -38,6 +42,9 @@ public class ItemVacuumsMod
 
         modEventBus.addListener(this::commonSetup);
 
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+
         MinecraftForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
@@ -52,8 +59,7 @@ public class ItemVacuumsMod
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.SAPPHIRE);
-            event.accept(ModItems.RAW_SAPPHIRE);
+
         }
     }
 
@@ -71,7 +77,7 @@ public class ItemVacuumsMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            MenuScreens.register(ModMenuTypes.WOODEN_VACUUM_MENU.get(), WoodenVacuumScreen::new);
         }
     }
 }

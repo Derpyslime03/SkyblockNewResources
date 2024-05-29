@@ -24,6 +24,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
 
         this.add(ModBlocks.SAPPHIRE_ORE.get(), block -> createOreDrop(ModBlocks.SAPPHIRE_ORE.get(), ModItems.RAW_SAPPHIRE.get()));
+
+        // Actual Mod Blocks
+        this.dropSelf(ModBlocks.WOODEN_VACUUM.get());
     }
 
     @Override
